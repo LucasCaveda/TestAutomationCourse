@@ -1,9 +1,11 @@
 package solvd.lecture3;
 
-public class Employee extends Person{
-    int employeeId;
-    int salary;
-    boolean working;
+import solvd.lecture3.interfaces.IEmployee;
+
+public class Employee extends Person implements IEmployee {
+    private int employeeId;
+    private int salary;
+    private boolean working;
 
     public Employee(String firstName, String lastName, char gender, int age, int employeeId, boolean working, int salary) {
         super(firstName, lastName, gender, age);
@@ -35,4 +37,12 @@ public class Employee extends Person{
     public void setWorking(boolean working) {
         this.working = working;
     }
+
+    @Override
+    public void working(){
+        if (working){
+            System.out.println(getFirstName()+" is working.");
+        }
+    }
+
 }

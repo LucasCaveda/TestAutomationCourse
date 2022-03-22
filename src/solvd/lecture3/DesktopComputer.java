@@ -2,7 +2,7 @@ package solvd.lecture3;
 
 
 public class DesktopComputer extends Computer{
-    Peripheral[] peripherals;
+    private Peripheral[] peripherals;
 
     public DesktopComputer(ComputerComponent CPU, ComputerComponent GPU, ComputerComponent memory, ComputerComponent storage, String brand, Peripheral[] peripherals) {
         super(CPU, GPU, memory, storage, brand);

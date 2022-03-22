@@ -1,7 +1,7 @@
 package solvd.lecture3;
 
 public class Tool {
-    private String utility;
+    private final String utility;
 
     public Tool(String utility) {
         this.utility = utility;

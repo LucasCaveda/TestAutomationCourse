@@ -1,7 +1,7 @@
 package solvd.lecture3;
 
 public abstract class Peripheral {
-    String connection;
+    private String connection;
 
     public Peripheral(String connection) {
         this.connection = connection;

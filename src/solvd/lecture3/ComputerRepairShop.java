@@ -1,9 +1,9 @@
 package solvd.lecture3;
 
 public class ComputerRepairShop extends Shop{
-    ManagerEmployee manager;
-    RepairEmployee[] repairEmployees;
-    int workSpaces;
+    private ManagerEmployee manager;
+    private RepairEmployee[] repairEmployees;
+    private int workSpaces;
 
     public ComputerRepairShop(String name, String address, ManagerEmployee manager, RepairEmployee[] repairEmployees, int workSpaces) {
         super(name, address);

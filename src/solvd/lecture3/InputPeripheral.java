@@ -1,8 +1,8 @@
 package solvd.lecture3;
 
 public class InputPeripheral extends Peripheral{
-    String name;
-    Boolean switchedOn;
+    private String name;
+    private Boolean switchedOn;
 
     public InputPeripheral(String connection, String name, Boolean switchedOn) {
         super(connection);

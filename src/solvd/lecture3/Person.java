@@ -1,6 +1,8 @@
 package solvd.lecture3;
 
-public abstract class Person {
+import solvd.lecture3.interfaces.IPerson;
+
+public abstract class Person implements IPerson {
     private String firstName;
     private String lastName;
     private char gender;
@@ -11,6 +13,11 @@ public abstract class Person {
         this.lastName = lastName;
         this.gender = gender;
         this.age = age;
+    }
+
+    @Override
+    public void sayHello(String firstName){
+        System.out.println("Hello, my name is "+firstName+".");
     }
 
     public String getFirstName() {
